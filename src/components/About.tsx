@@ -21,6 +21,15 @@ export default function About() {
               it&apos;s building the wrong thing correctly.
             </p>
             <p>
+              I&apos;m also passionate about Generative AI and agentic
+              systems — integrating AI-assisted features into the platforms I
+              build to support decision-making and automation. Most recently,
+              I coordinated the DevOps/QA workstream for a Church Management
+              System capstone, leading a 20-developer backend team through
+              GitHub-based CI/CD, API quality assurance, and release
+              processes across 141 endpoints.
+            </p>
+            <p>
               That discipline isn&apos;t theoretical. Before I wrote production
               code, I spent two decades leading business process
               optimization, Scrum ceremonies, and operations across telecom,

@@ -8,6 +8,10 @@ export const skillGroups = [
     skills: ["Node.js", "PostgreSQL", "Prisma", "MongoDB", "Neon"],
   },
   {
+    label: "AI & Automation",
+    skills: ["Generative AI", "AI Agent Development", "AI-Assisted Decision Support"],
+  },
+  {
     label: "Auth & Payments",
     skills: ["NextAuth", "JWT & OAuth", "Stripe", "Paystack", "Flutterwave"],
   },
@@ -18,6 +22,7 @@ export const skillGroups = [
       "RTL & Jest",
       "ADRs",
       "Agile / Scrum (PSM I)",
+      "CI/CD (GitHub Actions)",
     ],
   },
   {
@@ -29,5 +34,6 @@ export const skillGroups = [
 export const certifications = [
   "Professional Scrum Master™ I (PSM I)",
   "Lean Six Sigma Green Belt",
+  "Generative AI Mastermind — AI Generalist (2025)",
   "Operations Management — University of Pennsylvania",
 ];

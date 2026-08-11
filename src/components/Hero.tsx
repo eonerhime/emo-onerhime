@@ -6,7 +6,7 @@ import { GithubIcon, LinkedinIcon } from "./icons";
 
 const stats = [
   { value: "6", label: "Products shipped" },
-  { value: "5+", label: "Years engineering" },
+  { value: "5.5+", label: "Years engineering" },
   { value: "20+", label: "Years process leadership" },
   { value: "PSM I", label: "Certified Scrum Master" },
 ];
@@ -52,9 +52,10 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mt-6 max-w-2xl text-lg text-muted"
         >
-          Full-stack engineer specializing in Spec-Driven Development —
-          Next.js, TypeScript, and PostgreSQL, with the why, what, and how
-          documented before a single line of implementation ships.
+          Full-Stack Product Engineer and AI Agent Developer specializing in
+          Spec-Driven Development — React, Next.js, Node.js, and PostgreSQL,
+          with the why, what, and how documented before a single line of
+          implementation ships.
         </motion.p>
 
         <motion.div

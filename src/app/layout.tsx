@@ -16,22 +16,22 @@ const siteUrl = "https://emo-onerhime.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Emo Onerhime — Full-Stack Software Engineer",
+  title: "Emo Onerhime — Full-Stack Product Engineer",
   description:
-    "Full-stack software engineer specializing in Spec-Driven Development — Next.js, TypeScript & PostgreSQL. Portfolio of shipped products including SportsPred, HireFlow, AfroJamz, toutMessages, Abara & Glowreeyah.",
+    "Full-Stack Product Engineer & AI Agent Developer specializing in Spec-Driven Development — React, Next.js, Node.js & PostgreSQL. Portfolio of shipped products including SportsPred, HireFlow, AfroJamz, toutMessages, Abara & Glowreeyah.",
   openGraph: {
-    title: "Emo Onerhime — Full-Stack Software Engineer",
+    title: "Emo Onerhime — Full-Stack Product Engineer",
     description:
-      "Spec-Driven Development across Next.js, TypeScript & PostgreSQL. Six shipped products, from spec to production.",
+      "AI Agent Developer & Spec-Driven Development across React, Next.js, Node.js & PostgreSQL. Six shipped products, from spec to production.",
     url: siteUrl,
     siteName: "Emo Onerhime",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Emo Onerhime — Full-Stack Software Engineer",
+    title: "Emo Onerhime — Full-Stack Product Engineer",
     description:
-      "Spec-Driven Development across Next.js, TypeScript & PostgreSQL.",
+      "AI Agent Developer & Spec-Driven Development across React, Next.js, Node.js & PostgreSQL.",
   },
 };
 
