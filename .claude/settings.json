@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(vercel --version)",
+      "Bash(vercel whoami *)",
+      "Bash(gh --version)",
+      "Bash(gh auth *)",
+      "Bash(npm --version)",
+      "Bash(gh api *)",
+      "Bash(vercel project *)",
+      "WebFetch(domain:linkedin.com)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(npm ls *)",
+      "Bash(where chrome.exe)",
+      "Bash(where msedge.exe)",
+      "Bash(npx --yes playwright install --dry-run chromium)",
+      "Bash(npx --yes playwright install chromium)"
+    ]
+  }
+}
