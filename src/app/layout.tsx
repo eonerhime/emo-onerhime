@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Emo Onerhime — Full-Stack Product Engineer",
     description:
       "AI Agent Developer & Spec-Driven Development across React, Next.js, Node.js & PostgreSQL.",
