@@ -74,4 +74,24 @@ export const projects: Project[] = [
     liveUrl: "https://glowreeyah-topaz.vercel.app",
     githubUrl: "https://github.com/eonerhime/glowreeyah",
   },
+  {
+    slug: "alphadeck",
+    name: "AlphaDeck",
+    tagline: "An algorithmic trading agent platform with paper-run validation",
+    description:
+      "A Next.js trading agent platform with real-time multi-timeframe price charting, a paper-trading mode for validating strategies before risking capital, live position tracking, and a detailed agent log documenting every trading decision with timestamps and reasoning.",
+    cover: "/projects/alphadeck.jpg",
+    tech: ["Next.js", "TypeScript", "REST API"],
+    liveUrl: "https://alphadeck-ai.vercel.app",
+  },
+  {
+    slug: "cecilia-onerhime",
+    name: "Cecilia Onerhime",
+    tagline: "A multi-tenant memorial platform, launched with a family tribute site",
+    description:
+      "An online memorial platform with a built-in CMS for building tribute sites around a biography, a photo and video gallery, and a moderated wall of tributes, with a selectable template per tenant and role-based admin access. The database is tenant-ready with rate-limited public submissions and an admin queue for approving or rejecting tribute and gallery content; the Cecilia Onerhime site is its first live tenant.",
+    cover: "/projects/cecilia-onerhime.jpg",
+    tech: ["Next.js", "TypeScript", "PostgreSQL", "Vercel Blob"],
+    liveUrl: "https://cecilia-onerhime.vercel.app",
+  },
 ];
