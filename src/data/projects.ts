@@ -94,4 +94,15 @@ export const projects: Project[] = [
     tech: ["Next.js", "TypeScript", "PostgreSQL", "Vercel Blob"],
     liveUrl: "https://cecilia-onerhime.vercel.app",
   },
+  {
+    slug: "sleep-tracker",
+    name: "SleepTracker",
+    tagline: "Track your sleep, improve your health, and wake up refreshed",
+    description:
+      "A Next.js sleep-monitoring app that logs sleep patterns and turns them into personalized insights via Chart.js visualizations, with Clerk authentication and a Prisma-backed free/premium subscription model.",
+    cover: "/projects/sleep-tracker.png",
+    tech: ["Next.js", "TypeScript", "Prisma", "Clerk", "Chart.js"],
+    liveUrl: "https://sleep-tracker-next-steel.vercel.app",
+    githubUrl: "https://github.com/eonerhime/sleep-tracker-next",
+  },
 ];
