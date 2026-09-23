@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { shippedCountWord } from "@/data/projects";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Emo Onerhime — Full-Stack Product Engineer",
     description:
-      "AI Agent Developer & Spec-Driven Development across React, Next.js, Node.js & PostgreSQL. Six shipped products, from spec to production.",
+      `AI Agent Developer & Spec-Driven Development across React, Next.js, Node.js & PostgreSQL. ${shippedCountWord} shipped products, from spec to production.`,
     url: siteUrl,
     siteName: "Emo Onerhime",
     type: "website",

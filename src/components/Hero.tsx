@@ -3,9 +3,10 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./icons";
+import { shippedCount } from "@/data/projects";
 
 const stats = [
-  { value: "6", label: "Products shipped" },
+  { value: String(shippedCount), label: "Products shipped" },
   { value: "5.5+", label: "Years engineering" },
   { value: "20+", label: "Years process leadership" },
   { value: "PSM I", label: "Certified Scrum Master" },

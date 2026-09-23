@@ -87,7 +87,8 @@ export const projects: Project[] = [
   {
     slug: "cecilia-onerhime",
     name: "Cecilia Onerhime",
-    tagline: "A multi-tenant memorial platform, launched with a family tribute site",
+    tagline:
+      "A multi-tenant memorial platform, launched with a family tribute site",
     description:
       "An online memorial platform with a built-in CMS for building tribute sites around a biography, a photo and video gallery, and a moderated wall of tributes, with a selectable template per tenant and role-based admin access. The database is tenant-ready with rate-limited public submissions and an admin queue for approving or rejecting tribute and gallery content; the Cecilia Onerhime site is its first live tenant.",
     cover: "/projects/cecilia-onerhime.jpg",
@@ -106,3 +107,26 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/eonerhime/sleep-tracker-next",
   },
 ];
+
+export const shippedProjects = projects.filter((project) => project.liveUrl);
+
+export const shippedCount = shippedProjects.length;
+
+const numberWords = [
+  "Zero",
+  "One",
+  "Two",
+  "Three",
+  "Four",
+  "Five",
+  "Six",
+  "Seven",
+  "Eight",
+  "Nine",
+  "Ten",
+  "Eleven",
+  "Twelve",
+];
+
+export const shippedCountWord =
+  numberWords[shippedCount] ?? String(shippedCount);
