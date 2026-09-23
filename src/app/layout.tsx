@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { shippedCountWord } from "@/data/projects";
+import { shippedCountWord, shippedProjects } from "@/data/projects";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,11 +15,16 @@ const geistMono = Geist_Mono({
 
 const siteUrl = "https://emo-onerhime.vercel.app";
 
+const shippedNames = shippedProjects.map((project) => project.name);
+const shippedNameList =
+  shippedNames.length > 1
+    ? `${shippedNames.slice(0, -1).join(", ")} & ${shippedNames.at(-1)}`
+    : shippedNames.join("");
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Emo Onerhime — Full-Stack Product Engineer",
-  description:
-    "Full-Stack Product Engineer & AI Agent Developer specializing in Spec-Driven Development — React, Next.js, Node.js & PostgreSQL. Portfolio of shipped products including SportsPred, HireFlow, AfroJamz, toutMessages, Abara & Glowreeyah.",
+  description: `Full-Stack Product Engineer & AI Agent Developer specializing in Spec-Driven Development — React, Next.js, Node.js & PostgreSQL. Portfolio of shipped products including ${shippedNameList}.`,
   openGraph: {
     title: "Emo Onerhime — Full-Stack Product Engineer",
     description:
