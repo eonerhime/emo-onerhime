@@ -1,6 +1,6 @@
 import SectionHeading from "./SectionHeading";
 import ProjectCard from "./ProjectCard";
-import { projects } from "@/data/projects";
+import { projects, shippedCountWord } from "@/data/projects";
 
 export default function Projects() {
   return (
@@ -8,7 +8,7 @@ export default function Projects() {
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="Selected work"
-          title="Six products, shipped end to end"
+          title={`${shippedCountWord} products, shipped end to end`}
           description="Each link opens the live product in a new tab. Private repos are noted — the code stays closed, the product doesn't."
         />
 

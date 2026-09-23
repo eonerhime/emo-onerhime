@@ -1,3 +1,5 @@
+import { shippedCount } from "@/data/projects";
+
 export const ogSize = { width: 1200, height: 630 };
 export const ogContentType = "image/png";
 export const ogAlt =
@@ -14,7 +16,7 @@ const colors = {
 };
 
 const stats = [
-  { value: "6", label: "Products shipped" },
+  { value: String(shippedCount), label: "Products shipped" },
   { value: "5.5+", label: "Years engineering" },
   { value: "PSM I", label: "Certified Scrum Master" },
 ];
