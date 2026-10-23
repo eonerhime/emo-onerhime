@@ -1,6 +1,6 @@
 # emo-onerhime
 
-Personal portfolio site for Emo Onerhime — Full-Stack Product Engineer & AI Agent Developer. Built with Next.js, showcasing shipped products including SportsPred, HireFlow, AfroJamz, toutMessages, Abara, Glowreeyah, AlphaDeck, Cecilia Onerhime, and SleepTracker.
+Personal portfolio site for Emo Onerhime — Full-Stack Product Engineer & AI Agent Developer. Built with Next.js, showcasing shipped products including SportsPred, Epenal Group, Memories R Us, toutMessages, Glowreeyah, AfroJamz, Abara, AlphaDeck, HireFlow, and SleepTracker.
 
 Project content lives in [src/data/projects.ts](src/data/projects.ts). The "products shipped" count in the hero, Projects heading, and Open Graph metadata is derived from that list (every project with a `liveUrl`), so adding a project there updates it everywhere.
 
