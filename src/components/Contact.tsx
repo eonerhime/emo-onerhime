@@ -1,30 +1,13 @@
 import Reveal from "./Reveal";
-import { Mail, Phone } from "lucide-react";
+import { ArrowRight, Mail, Phone } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./icons";
+import { contact } from "@/data/contact";
 
 const links = [
-  {
-    href: "mailto:emo.onerhime@gmail.com",
-    label: "emo.onerhime@gmail.com",
-    icon: Mail,
-  },
-  {
-    href: "tel:+2348026581200",
-    label: "+234 802 658 1200",
-    icon: Phone,
-  },
-  {
-    href: "https://linkedin.com/in/emoonerhime",
-    label: "linkedin.com/in/emoonerhime",
-    icon: LinkedinIcon,
-    external: true,
-  },
-  {
-    href: "https://github.com/eonerhime",
-    label: "github.com/eonerhime",
-    icon: GithubIcon,
-    external: true,
-  },
+  { ...contact.email, icon: Mail, external: false },
+  { ...contact.phone, icon: Phone, external: false },
+  { ...contact.linkedin, icon: LinkedinIcon, external: true },
+  { ...contact.github, icon: GithubIcon, external: true },
 ];
 
 export default function Contact() {
@@ -57,6 +40,19 @@ export default function Contact() {
               {label}
             </a>
           ))}
+        </Reveal>
+
+        <Reveal delay={0.2} className="mt-8">
+          <a
+            href="/card"
+            className="group inline-flex items-center gap-2 text-sm text-muted transition-colors hover:text-accent-2"
+          >
+            Save or share my e-business card
+            <ArrowRight
+              size={14}
+              className="transition-transform group-hover:translate-x-1"
+            />
+          </a>
         </Reveal>
       </div>
     </section>

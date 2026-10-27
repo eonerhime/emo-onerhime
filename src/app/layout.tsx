@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { siteUrl } from "@/data/contact";
 import { shippedCountWord, shippedProjects } from "@/data/projects";
 
 const geistSans = Geist({
@@ -12,8 +13,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
-const siteUrl = "https://emo-onerhime.vercel.app";
 
 const shippedNames = shippedProjects.map((project) => project.name);
 const shippedNameList =
