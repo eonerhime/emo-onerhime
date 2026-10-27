@@ -1,8 +1,7 @@
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import QRCode from "qrcode";
 import { contact, profile, siteHost, siteUrl } from "@/data/contact";
+import { Icon, Monogram, colors, fontsPromise } from "@/lib/brand";
 
 // ISO 85 × 55 mm, the common business-card size in Nigeria. The layout is
 // drawn on a 300 dpi grid (1004 × 650 px) and scaled for other outputs.
@@ -19,26 +18,6 @@ export function cardPx(dpi: number) {
 
 export const cardAlt = `${profile.name} — ${profile.role} & ${profile.roleSecondary} business card`;
 
-const colors = {
-  background: "#05050a",
-  foreground: "#f4f4f7",
-  soft: "#d6d6e0",
-  muted: "#9797a8",
-  accent: "#7c5cff",
-  accent2: "#22d3c9",
-};
-
-const fontDir = join(process.cwd(), "src/assets/fonts");
-const fontsPromise = Promise.all([
-  readFile(join(fontDir, "Geist-Regular.ttf")),
-  readFile(join(fontDir, "Geist-SemiBold.ttf")),
-  readFile(join(fontDir, "GeistMono-Regular.ttf")),
-]).then(([regular, semibold, mono]) => [
-  { name: "Geist", data: regular, weight: 400 as const, style: "normal" as const },
-  { name: "Geist", data: semibold, weight: 600 as const, style: "normal" as const },
-  { name: "Geist Mono", data: mono, weight: 400 as const, style: "normal" as const },
-]);
-
 const qrBase = 168;
 
 function qrDataUrl(size: number) {
@@ -48,23 +27,6 @@ function qrDataUrl(size: number) {
     errorCorrectionLevel: "M",
     color: { dark: colors.background, light: "#ffffff" },
   });
-}
-
-function Icon({ size, children }: { size: number; children: React.ReactElement[] }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke={colors.accent2}
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      {children}
-    </svg>
-  );
 }
 
 const rows: { label: string; icon: React.ReactElement[] }[] = [
@@ -137,22 +99,7 @@ export function CardFace({ scale, qr }: { scale: number; qr: string }) {
       />
 
       <div style={{ display: "flex", alignItems: "center", gap: u(18) }}>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: u(60),
-            height: u(60),
-            borderRadius: u(16),
-            backgroundImage: `linear-gradient(135deg, ${colors.accent}, ${colors.accent2})`,
-            color: colors.background,
-            fontSize: u(24),
-            fontWeight: 600,
-          }}
-        >
-          EO
-        </div>
+        <Monogram size={u(60)} />
         <div
           style={{
             display: "flex",
