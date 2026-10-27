@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { ArrowRight, Download } from "lucide-react";
-import ShareCardButton from "@/components/ShareCardButton";
+import ShareLinkButton from "@/components/ShareLinkButton";
 import { profile, siteHost, siteUrl } from "@/data/contact";
 import { cardAlt, cardPx } from "@/lib/card";
 
@@ -87,7 +87,7 @@ export default function CardPage() {
               {label}
             </a>
           ))}
-          <ShareCardButton url={cardUrl} title={title} />
+          <ShareLinkButton url={cardUrl} title={title} />
         </div>
 
         <p className="mt-6 text-sm text-muted">

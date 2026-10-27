@@ -10,6 +10,11 @@ const links = [
   { ...contact.github, icon: GithubIcon, external: true },
 ];
 
+const shareLinks = [
+  { href: "/card", label: "Save or share my e-business card" },
+  { href: "/what-i-build", label: "What I build, on one card" },
+];
+
 export default function Contact() {
   return (
     <section id="contact" className="border-t border-border py-24">
@@ -42,17 +47,23 @@ export default function Contact() {
           ))}
         </Reveal>
 
-        <Reveal delay={0.2} className="mt-8">
-          <a
-            href="/card"
-            className="group inline-flex items-center gap-2 text-sm text-muted transition-colors hover:text-accent-2"
-          >
-            Save or share my e-business card
-            <ArrowRight
-              size={14}
-              className="transition-transform group-hover:translate-x-1"
-            />
-          </a>
+        <Reveal
+          delay={0.2}
+          className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-8"
+        >
+          {shareLinks.map(({ href, label }) => (
+            <a
+              key={href}
+              href={href}
+              className="group inline-flex items-center gap-2 text-sm text-muted transition-colors hover:text-accent-2"
+            >
+              {label}
+              <ArrowRight
+                size={14}
+                className="transition-transform group-hover:translate-x-1"
+              />
+            </a>
+          ))}
         </Reveal>
       </div>
     </section>

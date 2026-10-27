@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Check, Share2 } from "lucide-react";
 
-export default function ShareCardButton({
+export default function ShareLinkButton({
   url,
   title,
 }: {
