@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./icons";
+import { contact } from "@/data/contact";
 import { shippedCount } from "@/data/projects";
 
 const stats = [
@@ -84,7 +85,7 @@ export default function Hero() {
 
           <div className="ml-1 flex items-center gap-3 text-muted">
             <a
-              href="https://github.com/eonerhime"
+              href={contact.github.href}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -93,7 +94,7 @@ export default function Hero() {
               <GithubIcon size={20} />
             </a>
             <a
-              href="https://linkedin.com/in/emoonerhime"
+              href={contact.linkedin.href}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"

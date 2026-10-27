@@ -1,3 +1,4 @@
+import { siteHost } from "@/data/contact";
 import { shippedCount } from "@/data/projects";
 
 export const ogSize = { width: 1200, height: 630 };
@@ -72,7 +73,7 @@ export function OgImageContent() {
           </div>
         </div>
         <div style={{ display: "flex", fontSize: 22, color: colors.muted }}>
-          emo-onerhime.vercel.app
+          {siteHost}
         </div>
       </div>
 
